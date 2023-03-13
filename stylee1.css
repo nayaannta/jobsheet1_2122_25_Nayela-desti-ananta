@@ -1,0 +1,355 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color:rgb(220, 216, 226);
+  background-color: #4b5320;
+  overflow-x: hidden;
+  font-family: 'Inter', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+p {
+  line-height: 2;
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Inria Serif', serif;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+.container {
+    min-height: 200vh;
+    margin-bottom: 170px;
+    background-color: #8fbc8f;
+    
+}
+.navbar {
+    width: 100%;
+    height: 15vh;
+    background-color: #4b5320;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.navbar_menu nav{
+    padding: 0 15px;
+    padding-left: 60px;
+}
+.navbar_menu nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.navbar_menu nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0px 20px;
+    font-size: 20px;
+    margin-left: 30px;
+}
+.navbar_menu nav ul li a{
+    text-decoration: none;
+    
+    display: block;
+    padding: 25px 0;
+
+}
+.navbar_wrapper {
+    display: flex;
+    width: inherit;
+    max-width: 1080px;
+    height: inherit;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+
+.brand {
+    margin: 100px;
+    padding: 0;
+    user-select: none;
+    font-weight: 700;
+}
+
+.navbar_menu {
+    display: flex;
+    flex-direction: row;
+    font-weight: 400;
+    font-size: 18px;
+    gap: 30px;
+    text-transform: capitalize;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 800px;
+    background-image:url("image/wedding4.jpg");
+    background-size: cover;
+    background-position: top;
+    transition-duration: 3s;
+    margin-bottom: 70px;
+}
+
+.hero p1 {
+    font-weight: 400;
+    color: white;
+    font-size: 30px;
+    margin: 0;
+    font-family: 'great vibes',cursive;
+}
+
+.hero p {
+    font-size: 29px;
+    font-weight: 300;
+    margin: 0;
+}
+
+.hero h1 {
+    font-weight: 500;
+    font-size: 60px;
+    margin: 0;
+}
+
+.hero h2 {
+    font-weight: 500;
+    font-size: 60px;
+    margin: 0;
+    color: white;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+}
+
+.section_title {
+    font-size: 60px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.section_wrapper{
+    margin: 70px 0;
+    display: flex;
+    flex-direction: row;
+    width: inherit;
+    max-width: 1080px;
+}
+
+.section_content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.section_content h2 {
+    font-size: 32px;
+    margin: 0;
+}
+
+.section_content p {
+    margin: 0;
+    font-size: 18px;
+}
+
+.section_content .address {
+    margin-top: 10px;
+    margin-bottom: 14px;
+    font-size: 18px;
+}
+
+.section_image {
+    width: 540px;
+    height: 350px;
+    flex: 1;
+    background-size: auto;
+    background-position: center;
+}
+
+
+
+#akad .section_image {
+    background-image: url('');
+}
+
+#resepsi .section_image {
+    background-image: url("");
+}
+
+.form_wrapper {
+    width: inherit;
+    height: 567px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-image: url('image/cover home.jpg');
+    background-size: cover;
+    background-position: bottom;
+    margin: 38px 0;
+    transition-duration: 5s;
+}
+
+.form_wrapper:hover {
+    background-position: top;
+}
+
+.form_
+.form_buku_tamu {
+    width: 700px;
+    height: 500px;
+    background-color: #4b5320;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 3px 4px 6px rgba(0, 0, 0, 0.19);
+    padding: 50px 70px;
+    gap: 25px;
+    justify-content: center;
+}
+
+.form_group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+}
+
+.form_group input {
+    width: 350px;
+    height: 44px;
+    border: 1px solid #808080;
+    padding: 0 10px;
+}
+
+.form_wrapper button {
+    background-color: black;
+    border: none;
+    outline: none;
+    width: 150px;
+    height: 44px;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: auto;
+}
+
+#map .section_content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.btn_map {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 266px;
+    height: 50px;
+    border: none;
+    outline-style: none;
+    background-color: #4b5320;
+}
+
+.btn_map:hover {
+    background-color: #4b5320;
+    box-shadow: 3px 5px 8px black;
+}
+
+.gallery_list {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 20px;
+}
+
+.gallery_list img  {
+    width: 70%;
+    object-fit: cover;
+}
+
+vidio{
+    width: 50%;
+    height: auto;
+}
+
+.tabel1{
+    font-family: sans-serif;
+    color: #4b5320;
+    border-collapse: collapse;
+    width: 70%;
+    border: 1px solid #f2f5;
+    margin-top: 45px;
+    margin: auto;
+}
+.tabel1 tr th{
+    background: #4b5320;
+    color: #fff;
+    font-weight: normal;
+}
+.tabel1, th, td{
+    padding: 8px 20px;
+    
+}
+.tabel1 tr:nth-child(even){
+    background: #4b5320;
+}
+
+footer {
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    background-color: #4b5320;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+
+footer p,
+footer h2 {
+    margin: 0;
+    color: #808080;
+}
