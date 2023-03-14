@@ -43,6 +43,7 @@ h1 {
     min-height: 200vh;
     margin-bottom: 170px;
     background-color: #8fbc8f;
+    background-size: cover;
     
 }
 .navbar {
@@ -111,9 +112,9 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100vw;
-    height: 800px;
-    background-image:url("image/wedding4.jpg");
+    width: 100%;
+    height: 1000px;
+    background-image:url("image/wedding11.jpg");
     background-size: cover;
     background-position: top;
     transition-duration: 3s;
@@ -307,9 +308,18 @@ section {
     object-fit: cover;
 }
 
-vidio{
+video{
     width: 50%;
     height: auto;
+}
+
+audio{
+    display: block;
+    position: fixed;
+    top: 300px;
+    right: 100px;
+    margin-right: 10px;
+    width: 20px;
 }
 
 .tabel1{
@@ -336,7 +346,7 @@ vidio{
 
 footer {
     width: 100vw;
-    height: 100px;
+    height: 95px;
     display: flex;
     background-color: #4b5320;
     flex-direction: column;
